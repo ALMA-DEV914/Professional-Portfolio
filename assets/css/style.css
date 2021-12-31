@@ -32,25 +32,6 @@
   .form-inline {
     margin: 10px 0;
   }
-  .transbox {
-    margin: 30px;
-    background-color: #ffffff;
-    box-shadow: 4px 4px 4px 4px gray;
-    padding: 15px;
-  }
-  .transbox1 {
-    margin: 30px;
-    background-color: white;
-    box-shadow: 4px 4px 4px 4px gray;
-    padding: 15px;
-  }
-  
-  .transbox p, .transbox1 p {
-    margin: 5%;
-    font-weight: bold;
-    color: #000000;
-    text-align: center;
-  }
   
   .logo{
      text-align: center;
@@ -78,7 +59,7 @@
     padding: 20px;
     text-align: center;
   }
-  
+
   h2{
     padding: 20px;
   }
@@ -179,7 +160,6 @@ p a{
   .card{
     width: 100%;
     display: block;
-    
     
   }
 }
