@@ -132,21 +132,30 @@
   <div class="container" id="work">
       <h2>Check Some of my Work <i class="fa fa-angle-down"></i></h2>
   <div class="row">
-  <div class="col-sm-6" style="float: left;">
-        <div class="transbox">
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
           <img src="./assets/images/UI-interactive.png" alt="phone" width="100%">
-            <h4>Interactive User Interface</h4>
+        </div>
+        <div class="flip-box-back">
+          <h4>Interactive User Interface</h4>
           <a href="http://almasproductions.com/">Movies on the go!</a>
           <h4>Built with:</h4>
           HTML, CSS, Javascript, Third party API, Bootstrap/Mediaqueries, 
           Git/Github - We used this application to work together or collaborate in build this project.
           <p>This application would allow user to search for a movie and could check the ratings as well as the plot of the story.</p> 
-          </div>
+         </div>
       </div>
-      <div class="col-sm-6" style="float: right;">
-          <div class="transbox1">
-            <img src="./assets/images/weather.png" alt="phone" width="100%" height="200"  style="float: right; padding: 10px;">
-             <h4>Weather Dashboarad</h4>
+    </div>
+    
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <img src="./assets/images/weather.png" alt="phone" width="100%" height="200"  style="float: right; padding: 10px;">
+             
+        </div>
+        <div class="flip-box-back">
+          <h4>Weather Dashboarad</h4>
              <a href="https://almasproductions.com/Weather-Dashboard/">Weather Dashboard</a>
              <h4>Powered by:</h4>
 
@@ -155,24 +164,35 @@
               CSS, and 
               Bootstrap
               <p>This application will allow user to check the weather condition in a certain city or place. I used third party api to fetch the data information. This display the current forecast and the 5 days weather condition ahead. </p>
-          </div>
-          </div>
-        <div class="col-sm-6" style="float: left;">
-              <div class="transbox1">
+        </div>
+      </div>
+    </div>
+     
+      
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
                 <img src="./assets/images/scheduler.png" alt="phone" width="100%" style="float: left; padding: 10px;">
-            <h4>Work Day Scheduler</h4>
+              </div>
+              <div class="flip-box-back">
+                <h4>Work Day Scheduler</h4>
             <a href="https://almasproductions.com/Work-Scheduler/">Work Day Scheduler</a><br>
             <a href="https://time-saver-12345.herokuapp.com/">Notes Saver</a>
 
             <h4>Powered by:</h4>
            BOOTSTRAP, HTML, CSS, and JQUERY
            <p> This application used Bootstrap and Jquery. It will allow user to key in events of their past, present and future schedule. The user key in events is save in the text input even after refreshing the page. I created a local storage to get all user inputs.The application have a color-coding that will indicate whether the schedule is current, past or in the future. So I used Css to assign colors as a markdown on the color schedule.</p>
+              </div>
             </div>
-            </div>
-            <div class="col-sm-6" style="float: right;">
-                <div class="transbox">
+          </div>
+         
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
                   <img src="./assets/images/backend.png" alt="phone" width="100%" style="float: left; padding: 10px;">
-                <h4>Model View Controller</h4>
+                </div>
+                <div class="flip-box-back">
+                  <h4>Model View Controller</h4>
                 <a href="https://mysterious-brook-54092.herokuapp.com/">TECH BLOG SITE</a>
                 <p>This website was build as CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. This app follow the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
 
@@ -187,16 +207,77 @@
                   </p>
                 </div>
               </div>
-              <div class="col-sm-12">
-                  <div class="transbox">
-                    <img src="./assets/images/fanpage.png" alt="phone" width="100%" style="float: left; padding: 10px;">
-                  <h4>Fanpage Site</h4>
+       </div>
+       <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="./assets/images/1stportfolio.png" alt="portfolio" width="100%">
+          </div>
+          <div class="flip-box-back">
+            <h4>My First Project portfolio</h4>
+            <p>This project test my ability on how to execute the framework. It is about using flexbox and tags.</p>
+          </div>
+        </div>
+      </div>
+
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                        <img src="./assets/images/fanpage.png" alt="phone" width="100%;">
+                  </div>
+                  <div class="flip-box-back">
+                    <h4>Fanpage Site</h4>
                   <a href="https://alma-dev914.github.io/Fanpage-Site/">Air Supply Fanatics</a>
                   <p>This site is purely HTML and CSS when I am just starting to learn coding</p>
+  
                   </div>
                 </div>
+              </div>
+             
+         </div>
+        </div>
+        </div>
+          <section id="contact">
+            <div class="contact-container">
+              <h2>Contact Me</h2>
+                <form class="contact-form">
+                    <label class="form-label">Name</label>
+                    <input
+                        class="form-input user-input-name"
+                        name="name"
+                        placeholder="Your name.."
+                        required
+                    />
+                    <label class="form-label">Email</label>
+                    <input
+                        type="email"
+                        class="form-input user-input-email"
+                        name="email"
+                        placeholder="Your email address.."
+                        required
+                    />
+                    <label class="form-label">Phone Number</label>
+                    <input
+                        class="form-input user-input-phone"
+                        name="phone"
+                        placeholder="Your phone number.."
+                    />
+                    <label class="form-label">Message</label>
+                    <textarea
+                        class="form-input form-message user-input-message"
+                        name="message"
+                        placeholder="Write something.."
+                        required
+                    ></textarea>
+                    <span class="form-feedback"></span>
+                    <input
+                        class="form-button"
+                        type="submit"
+                        value="Submit"
+                    />
+                </form>
             </div>
-          </div>
+        </section>
 
           <div class="footer">
             <p>Alma's Productions</p>
@@ -229,7 +310,8 @@
             <input type="text" id="phone" class="form-control" placeholder="Phone No" required>
             </div>
             <div class="form-group">
-              <textarea id="message" class="form-control" rows="4" placeholder=" How can I help you?"></textarea>
+              <textarea id="message" class="form-control " rows="4" placeholder=" How can I help you?"></textarea>
+              <span class="form-feedback"></span>
             </div>
             </div>
             <div class="form-group form-check">
