@@ -41,9 +41,10 @@ const submitHandler = async (event) => {
             body: JSON.stringify({ name, email, phoneNumber, message }),
             headers: { "Content-Type": "application/json" },
         });
+        
         if (response.ok) {
             formFeedbackSpan.innerHTML = "Message successfully received!";
-            formFeedbackSpan.style.color = "#C6FFBE";
+            formFeedbackSpan.style.color = "#000";
             contactForm.reset();
         } else {
             formFeedbackSpan.innerHTML = "Error sending email.";
