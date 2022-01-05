@@ -48,6 +48,7 @@
   }
   img{
     padding: 8px;
+    
   }
   .div {
     text-align: center;
@@ -240,6 +241,7 @@ input[type=submit]{
 }
 .flip-box img{
   height: fit-content;
+  margin: auto 0;
 }
 .flip-box-inner {
   position: relative;
