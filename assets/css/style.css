@@ -22,6 +22,15 @@
   padding: 15px;
   
 }
+#caption1{
+  background: none;
+  border: none;
+  color: #0c0a8d;
+}
+#caption1 h1{
+  margin-top: 20px;
+}
+
   .navbar-nav li {
     margin: 10px 30px;
   }
@@ -65,7 +74,7 @@
   }
 #image{
     border-radius: 100%;
-
+    border: 10px solid black;
 }
 #about{
   text-align: center;
