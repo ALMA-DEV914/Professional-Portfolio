@@ -14,7 +14,9 @@
 .nav-item a:hover{
   color: yellow;
 }
-
+h1{
+  color: #ffffff;
+}
 #caption1{
   background: none;
   border: none;
@@ -50,7 +52,6 @@
   }
   img{
     padding: 8px;
-    
   }
   .div {
     text-align: center;
@@ -145,6 +146,9 @@ input[type=submit]{
 @media screen and (max-width: 575px) {
   input[type=submit]{
     width: 90%;
+  }
+  h1{
+    color: #000;
   }
   .carousel-caption h1{
     font-size: 25px;
