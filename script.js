@@ -17,26 +17,24 @@ const submitHandler = async (event) => {
         return;
     }
 
-    if (name && email && phoneNumber && message) {
+   else if (name && email && phoneNumber && message) {
         const response = await fetch("/text-email", {
             method: "POST",
             body: JSON.stringify({ name, email, phoneNumber, message }),
             headers: { "Content-Type": "application/json" },
         });
         
-        if (response.ok) {
+        
             formFeedbackSpan.innerHTML = "Message successfully received!";
             formFeedbackSpan.style.color = "#000";
             contactForm.reset();
-        } else {
-            formFeedbackSpan.innerHTML = "Error sending email.";
-            formFeedbackSpan.style.color = "#0000";
-        }
+    
     } else {
         formFeedbackSpan.innerHTML = "Please fill out all fields.";
         formFeedbackSpan.style.color = "#000";
     }
 };
+
 
 //validates email string
 function validateEmail(email) {
