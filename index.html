@@ -397,8 +397,8 @@
       </div>
           <section id="contact">
             <div class="contact-container">
-              <h2>Contact Me</h2>
                 <form class="contact-form">
+                  <h2>Contact Me</h2>
                     <label class="form-label">Name</label>
                     <input
                         class="form-input user-input-name"
@@ -455,7 +455,7 @@
         
         <!-- Modal body -->
         <div class="modal-body">
-          <form onsubmit ="sendEmail(); reset(); return false;">
+          <form onsubmit ="sendEmail(); reset();">
             <div class="form-group">
               <label for="name">Your Name</label>
               <input type="text" id="name" class="form-control" placeholder="Your Name" required>
@@ -486,7 +486,7 @@
           <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
         </div>
       </div>
-  </div>
+    </div>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="./script.js"></script>
 </body>

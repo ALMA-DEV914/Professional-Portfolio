@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Georgia sans-serif;
+  
 }
 
 .fixed-top{
@@ -247,8 +248,10 @@ input[type=submit]{
 }
 #contact .contact-container{
   width: 80%;
+  display: block;
 }
 }
+
 
 .contact-container {
 box-shadow: 0px 22px 70px 4px;
@@ -256,6 +259,8 @@ background-color: skyblue;
 width: 50%;
 margin: 2em auto 2em auto;
 padding: 1.5em;
+display: flex;
+text-align: center;
 }
 
 .contact-form {
