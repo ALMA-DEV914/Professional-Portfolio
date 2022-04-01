@@ -378,7 +378,7 @@ font-size: 25px;
 
 }
 
-@media screen and (max-width: 1284px) {
+@media screen and (max-width:458px) {
   .flip-box-front img {
     width: 100%;
   }
