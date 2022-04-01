@@ -237,7 +237,7 @@ input[type=submit]{
 }
 .row .flip-box{
   width: 100%;
-  margin: 5% auto;
+  margin: 10% auto;
 }
 .row .flip-box-front{
   background-color: silver;
@@ -327,7 +327,7 @@ height: 7em;
 .flip-box {
 background-color: transparent;
 width: 48%;
-margin: 0 1%;
+margin: auto 1%;
 height: 400px;
 border: 1px solid #f1f1f1;
 perspective: 1000px;
@@ -362,7 +362,6 @@ backface-visibility: hidden;
 }
 
 .flip-box-front {
-background-color: lightgray;
  border-radius: 20px;
  
 }
