@@ -237,10 +237,15 @@ input[type=submit]{
 }
 .row .flip-box{
   width: 100%;
-  margin: 8px auto;
+  margin: 5% auto;
 }
 .row .flip-box-front{
   background-color: silver;
+  height: 400px;
+ 
+}
+.row .flip-box-back{
+  margin: 3% auto;
 }
 .row #project{
   height: 400px;
