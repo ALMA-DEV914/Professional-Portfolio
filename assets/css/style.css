@@ -353,10 +353,12 @@ backface-visibility: hidden;
 .flip-box-front {
 background-color: lightgray;
  border-radius: 20px;
+ height: auto;
 }
 
 .flip-box-back {
 transform: rotateY(180deg);
+height: auto;
 }
 #project{
 width: 100%;
