@@ -3,9 +3,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Georgia sans-serif;
+
   
 }
-
+html, body {
+  height: 100%;
+  margin: 0;
+}
 .fixed-top{
 background-color: #ffffff;
 box-shadow: 4px 4px 4px grey;
@@ -53,6 +57,7 @@ color: #000;
 #about{
 display: flex;
 }
+
 /* Create two equal columns that sits next to each other */
 .column {
   flex: 50%;
@@ -73,10 +78,15 @@ display: flex;
 
 h2{
   padding: 20px;
+  text-align: center;
+  color: #f1f1f1;
+  font-weight:bolder;
+  
 }
 #skills{
-padding: 12px;
+padding: 15px;
 background-color: #f1f1f1;
+
 }
 #image{
   border-radius: 100%;
@@ -85,6 +95,8 @@ background-color: #f1f1f1;
 #about{
 text-align: center;
 background-color: #f1f1f1;
+padding: 15px;
+
 }
 #work{
 background: none;
@@ -108,6 +120,7 @@ border-radius: 5px;
 margin: 5% auto;
 
 }
+
 .row{
 margin: 5%;
 }
@@ -120,7 +133,40 @@ flex-wrap: wrap;
 padding: 0 4px;
 
 }
-
+#row1{
+  margin: -2% auto;
+  margin-bottom: 8%;
+  
+}
+.outer {
+  height:100%;
+  overflow: hidden;
+}
+.inner {
+  height:200%;
+  width:100%;
+  -webkit-animation:mymove 10s linear infinite;
+  /* Safari and Chrome */
+  animation:mymove 10s linear infinite;
+  background-image: url('../images/z5.jpg');
+  background-size: 100% 50%;
+}
+@-webkit-keyframes mymove {
+  from {
+      background-position: 0% 0%;
+  }
+  to {
+      background-position: 0% -100%;
+  }
+}
+@keyframes mymove {
+  from {
+      background-position: 0% 0%;
+  }
+  to {
+      background-position: 0% -100%;
+  }
+}
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 768px) {
@@ -204,6 +250,9 @@ input[type=submit]{
  
  
 }
+#row1{
+  width: 100%;
+}
 .row .flip-box-back{
   margin: 3% auto;
 }
@@ -219,6 +268,7 @@ input[type=submit]{
   padding: 20px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  
   }
 
 }
@@ -284,10 +334,12 @@ margin: auto 1%;
 height: 400px;
 border: 1px solid #f1f1f1;
 perspective: 1000px;
+padding: 15px;
 }
 
 .flip-box-inner {
 position: relative;
+background-color: #ffffff;
 width: 100%;
 height: 100%;
 text-align: center;
