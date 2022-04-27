@@ -79,7 +79,6 @@ display: flex;
 h2{
   padding: 20px;
   text-align: center;
-  color: #f1f1f1;
   font-weight:bolder;
   
 }
@@ -90,7 +89,8 @@ background-color: #f1f1f1;
 }
 #image{
   border-radius: 100%;
-  border: 10px solid rgb(187, 185, 183);
+  border: 10px solid ghostwhite;
+  
 }
 #about{
 text-align: center;
@@ -145,14 +145,15 @@ padding: 0 4px;
   height:100%;
   overflow: hidden;
 }
-.inner {
-  height:200%;
+#inner {
+  height:100%;
   width:100%;
   -webkit-animation:mymove 10s linear infinite;
   /* Safari and Chrome */
   animation:mymove 10s linear infinite;
   background-image: url('../images/z5.jpg');
   background-size: 100% 50%;
+  
 }
 @-webkit-keyframes mymove {
   from {
@@ -246,18 +247,15 @@ input[type=submit]{
 }
 .row .flip-box{
   width: 100%;
-  margin: 10% auto;
+  margin: 5% auto;
 }
-.row .flip-box-front{
-  background-color: silver;
- 
- 
-}
+
+
 #row1{
   width: 100%;
 }
 .row .flip-box-back{
-  margin: 3% auto;
+  margin: 2% auto;
 }
 
 #contact .contact-container{
@@ -277,7 +275,6 @@ input[type=submit]{
 }
 .contact-container {
 box-shadow: 0px 22px 70px 4px;
-background-color: skyblue;
 width: 50%;
 margin: 2em auto 2em auto;
 padding: 1.5em;
@@ -290,10 +287,13 @@ display: flex;
 flex-direction: column;
 align-items: center;
 width: 100%;
+margin: 5% auto;
 }
 
 .form-label {
 height: 20px;
+color: #f1f1f1;
+font-weight: 800;
 }
 
 .form-input {
@@ -331,13 +331,14 @@ height: 7em;
 }
 
 .flip-box {
-background-color: transparent;
+background-image: url(/assets/images/z5.jpg);
 width: 48%;
 margin: auto 1%;
 height: 400px;
-border: 1px solid #f1f1f1;
 perspective: 1000px;
 padding: 15px;
+border-radius: 15px;
+background-size: cover;
 }
 
 .flip-box-inner {
@@ -372,7 +373,7 @@ transform: rotateY(180deg);
 
 }
 
-@media screen and (max-width:428px) {
+@media screen and (max-width:414px) {
 
   .flip-box-front, .flip-box-back {
     position: absolute;
@@ -384,12 +385,34 @@ transform: rotateY(180deg);
     .flip-box-inner {
       position: relative;
       width: 100%;
-      font-size: 18px;
+      font-size: 16px;
       text-align: center;
       transition: transform 0.8s;
       transform-style: preserve-3d;
       }
     .flip-box, .flip-box-inner{
-      margin: 5% auto;
+      margin: 0 auto;
+    }  
+}
+
+@media screen and (max-width:390px) {
+
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    }
+    .flip-box-inner {
+      position: relative;
+      width: 100%;
+      font-size: 16px;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+      }
+    .flip-box, .flip-box-inner{
+      margin: 0 auto;
     }  
 }
