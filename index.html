@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/162a567ea0.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script async src="https://cse.google.com/cse.js?cx=9388fff91c493e124"></script>
+
+
   <title>Personal Portfolio</title>
 </head>
 <body>
@@ -70,7 +72,7 @@
         <div class="carousel-caption" id="caption2">
           <h2>MISSION</h2>
           <h5>My mission is to ensure the best relationship with clients, both during and after their goals have been met. To keep this in mind whether designing print media, creating custom maps, producing multimedia or building websites.</h5>
-          <p>“Don’t treat your business website like logistics, treat it like an employee.” – Amit Kalantri</p>
+  
         </div>
       </div>
       <div class="carousel-item">
@@ -78,7 +80,6 @@
         <div class="carousel-caption" id="caption3">
           <h2>VISION</h2>
           <h5>I consistently work on development process to provide an informative, user-friendly and effective strategy to provide companies with the message or goal they are hoping to accomplish. This development process is tailored to meet the needs of small, medium and large size businesses and enterprises.</h5>
-          <p>“Don’t treat your business website like logistics, treat it like an employee.” – Amit Kalantri</p>
         </div>
       </div>
     <!-- Left and right controls -->
@@ -93,7 +94,7 @@
 <div class="container" id="about">
   <div class="column">
   <h2 id="aboutme">Who am I?</h2>
- Alma Braun has completed a Full Stack Web develop Bootcamp at UC Berkeley. Experienced in HTML, CSS, JAVASCRIPT,Web Design and REACT.<br> Alma is currently signed up as a Freelancer working with clients to do some debugging and features functionalities on a web application.<br>Enjoys being challenged and engaged with projects that require <br>to work outside her comfort zone and knowledge set, especially while collaborating with a team. She has a passion to be a part of growth in providing a good services and a great user experienced.<br><a href="./assets/images/Resume2.pdf" >Download Resume</a></p>
+ Alma Braun has completed a Full Stack Web develop Bootcamp at UC Berkeley. Experienced in HTML, CSS, JAVASCRIPT, NODE, and REACT.<br>Enjoys being challenged and engaged with projects that require <br>to work outside her comfort zone and knowledge set, especially while collaborating with a team. She has a passion to be a part of growth in providing a good services and a great user experienced.<br><a href="./assets/images/Resume2.pdf" >Download Resume</a></p>
 </div>
 <div class="column">
   <h2 id="aboutme">Contact Information</h2>
@@ -101,13 +102,13 @@
   Email: <a href="mailto:aungonalna58@gmail.com">aungonalna58@gmail.com</a><br>
  LinkedIn: <a href="https://www.linkedin.com/in/alma-braun-1b11731aa/">https://www.linkedin.com/in/alma-braun-1b11731aa/</a><br>
   <a href="https://alma-dev914.github.io/portfolio-built-with-react/">portfolio-built-with-react</a><br>
-  Contact#: 775-742-5989 | Reno, NV 89521
+  Contact: 775-742-5989 | Reno, NV 89521
 </div>
 </div>
 
 <div class="container" id="skills">
   <h1 style="color: black;">SKILLS & TECHNOLOGIES</h1>
-<div class="row" id="skills">
+    <div class="row" id="skills">
     <img src="https://th.bing.com/th/id/OIP.pqcPskVdTrJqfhZ-Z49AtQHaHn?pid=ImgDet&rs=1" width="80px" height="80px"/>
     <img src="https://th.bing.com/th/id/R.2ed8469e1e2470ada0ad4d38075be61d?rik=3ZBSTs%2f8LcTHNg&pid=ImgRaw&r=0"width="80px" height="80px" />
     <img src="https://th.bing.com/th/id/OIP.YPYdVAg5ieRspLI6HIpmDQHaIB?pid=ImgDet&rs=1" width="80px" height="80px"/>
@@ -128,7 +129,7 @@
 </div>
 
 <div class="section">
-  <h2>Check Some of my Work <i class="fa fa-angle-down"></i></h2>
+  <h2>Check Some of my Work <br>Hover to see projects details<br><i class="fa fa-angle-down"></i></h2>
   <div class="container">
   <div class="row">
     <div class="flip-box">
@@ -156,7 +157,7 @@
       <div class="flip-box">
         <div class="flip-box-inner">
           <div class="flip-box-front">
-            <img src="./assets/images/projectmvc.png" alt="FixUp.com" width="100%"><br>
+            <img src="./assets/images/projectmvc.png" alt="FixUp.com" width="100%"><br><br>
             <h1>Interactive Full-Stack Project</h1>
             </div>
             <div class="flip-box-back">
@@ -444,52 +445,7 @@
             <p>Copyright 2020 @almasproductions. All rights reserved.</p>
             <i class="fa fa-facebook"></i> <i class="fa fa-whatsapp"></i> <i class="fa fa-envelope"></i> <i class="fa fa-linkedin"></i>
           </div>
-            <!-- The Modal -->
-   <div class="modal fade" id="myModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Stay in touch, direct to your inbox!</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div> 
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-          <form onsubmit ="sendEmail(); reset();">
-            <div class="form-group">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" class="form-control" placeholder="Your Name" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email address:</label>
-              <input type="email" class="form-control" placeholder="Enter email" id="email">
-             <div class="form-group">
-            <label for="phone"></label>
-            <input type="text" id="phone" class="form-control" placeholder="Phone No" required>
-            </div>
-            <div class="form-group">
-              <textarea id="message" class="form-control " rows="4" placeholder=" How can I help you?"></textarea>
-              <span class="form-feedback"></span>
-            </div>
-            </div>
-            <div class="form-group form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox"> Remember me
-              </label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-    
+            
   <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="./script.js"></script>
 </body>

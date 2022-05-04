@@ -3,13 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Georgia sans-serif;
-
+  
   
 }
-html, body {
-  height: 100%;
-  margin: 0;
-}
+
 .fixed-top{
 background-color: #ffffff;
 box-shadow: 4px 4px 4px grey;
@@ -19,8 +16,10 @@ margin-left: 30%;
 }
 .nav-item a{
 color: #000;
-
+margin: 10px 30px;
+font-size: 18px;
 }
+
 .nav-item a:hover{
 color: rgb(38, 163, 201);
 }
@@ -35,15 +34,6 @@ margin-top: 20px;
 color: #000;
 }
 
-
-.navbar-nav li {
-  margin: 10px 30px;
- 
-  
-}
-.navbar-nav li a {
-  font-size: 18px;
-}
 .form-inline {
   margin: 10px 0;
 }
@@ -54,9 +44,7 @@ color: #000;
    font-size: 25px;
    margin-right: 15%;
 }
-#about{
-display: flex;
-}
+
 
 /* Create two equal columns that sits next to each other */
 .column {
@@ -64,16 +52,6 @@ display: flex;
   padding: 10px;
   margin: 0 auto;
   border: 5px solid white;
-}
-
-.div {
-  text-align: center;
-  font-size: 25px;
-  margin: 10%;
-}
-.div p{
-  padding: 20px;
-  text-align: center;
 }
 
 h2{
@@ -96,10 +74,12 @@ background-color: #f1f1f1;
 text-align: center;
 background-color: #f1f1f1;
 padding: 15px;
+display: flex;
 
 }
 #aboutme{
   color: #000;
+
 }
 #work{
 background: none;
@@ -120,7 +100,7 @@ font-size: 25px;
 
 .container {
 border-radius: 5px;
-margin: 5% auto;
+margin: 3% auto;
 
 }
 
@@ -141,35 +121,117 @@ padding: 0 4px;
   margin-bottom: 8%;
   
 }
-.outer {
-  height:100%;
-  overflow: hidden;
-}
 #inner {
   height:100%;
   width:100%;
-  -webkit-animation:mymove 10s linear infinite;
-  /* Safari and Chrome */
-  animation:mymove 10s linear infinite;
   background-image: url('../images/z5.jpg');
-  background-size: 100% 50%;
   
 }
-@-webkit-keyframes mymove {
-  from {
-      background-position: 0% 0%;
-  }
-  to {
-      background-position: 0% -100%;
-  }
+
+#contact{
+  width: 80%;
+  display: block;
+  margin: 0 auto;
 }
-@keyframes mymove {
-  from {
-      background-position: 0% 0%;
-  }
-  to {
-      background-position: 0% -100%;
-  }
+.contact-container {
+box-shadow: 0px 22px 70px 4px;
+width: 50%;
+margin: 2em auto ;
+padding: 1.5em;
+
+
+}
+
+.contact-form {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+margin: 5% auto;
+}
+
+.form-label {
+height: 20px;
+color: #f1f1f1;
+font-weight: 800;
+
+}
+
+.form-input {
+border-radius: 6px;
+color: black;
+height: 40px;
+margin-bottom: 0.5em;
+text-align: left;
+width: 80%;
+padding: 6px;
+}
+
+
+/* Button border animation inspired from https://css-tricks.com/animating-border/ */
+
+.form-button {
+margin-top: 1em;
+height: 3em;
+width: 7em;
+background-color:rgb(32, 141, 55);
+border: 0;
+color: #ffffff;
+outline: solid 0px rgb(0, 195, 255);
+transition: outline 0.3s linear, background-color 1.6s linear;
+}
+
+.form-button:hover {
+outline-width: 10px;
+background-color: #181516;
+}
+
+.form-message {
+height: 7em;
+
+
+}
+
+.flip-box {
+width: 48%;
+margin: auto 1%;
+height: 400px;
+perspective: 1000px;
+padding: 15px;
+border-radius: 15px;
+background-size: cover;
+}
+
+.flip-box-inner {
+position: relative;
+background-color: #ffffff;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+position: absolute;
+width: 100%;
+padding: 20px;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+
+.flip-box-front {
+ border-radius: 20px;
+ background-color: #eef2f5;
+}
+
+.flip-box-back {
+transform: rotateY(180deg);
+font-size: 20px;
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
@@ -189,7 +251,11 @@ input[type=submit]{
   height: 450px;
 }
 .row .flip-box-front{
-  background-color: silver;
+  background-color: rgb(233, 231, 231);
+  
+}
+.flip-box-back{
+  font-size: 18px;
 }
 .row #project{
   height: 400px;
@@ -250,7 +316,6 @@ input[type=submit]{
   margin: 5% auto;
 }
 
-
 #row1{
   width: 100%;
 }
@@ -258,10 +323,6 @@ input[type=submit]{
   margin: 2% auto;
 }
 
-#contact .contact-container{
-  width: 80%;
-  display: block;
-}
 .flip-box-front, .flip-box-back {
   position: absolute;
   width: 100%;
@@ -271,105 +332,6 @@ input[type=submit]{
   backface-visibility: hidden;
   
   }
-
-}
-.contact-container {
-box-shadow: 0px 22px 70px 4px;
-width: 50%;
-margin: 2em auto 2em auto;
-padding: 1.5em;
-display: flex;
-text-align: center;
-}
-
-.contact-form {
-display: flex;
-flex-direction: column;
-align-items: center;
-width: 100%;
-margin: 5% auto;
-}
-
-.form-label {
-height: 20px;
-color: #f1f1f1;
-font-weight: 800;
-}
-
-.form-input {
-border-radius: 6px;
-color: black;
-height: 40px;
-margin-bottom: 0.5em;
-text-align: left;
-width: 80%;
-padding: 6px;
-}
-
-
-/* Button border animation inspired from https://css-tricks.com/animating-border/ */
-
-.form-button {
-margin-top: 1em;
-height: 3em;
-width: 7em;
-background-color:rgb(32, 141, 55);
-border: 0;
-color: #ffffff;
-outline: solid 0px rgb(0, 195, 255);
-transition: outline 0.3s linear, background-color 1.6s linear;
-}
-
-.form-button:hover {
-outline-width: 10px;
-background-color: #181516;
-}
-
-.form-message {
-height: 7em;
-
-}
-
-.flip-box {
-background-image: url(/assets/images/z5.jpg);
-width: 48%;
-margin: auto 1%;
-height: 400px;
-perspective: 1000px;
-padding: 15px;
-border-radius: 15px;
-background-size: cover;
-}
-
-.flip-box-inner {
-position: relative;
-background-color: #ffffff;
-width: 100%;
-height: 100%;
-text-align: center;
-transition: transform 0.8s;
-transform-style: preserve-3d;
-}
-
-.flip-box:hover .flip-box-inner {
-transform: rotateY(180deg);
-}
-
-.flip-box-front, .flip-box-back {
-position: absolute;
-width: 100%;
-padding: 20px;
--webkit-backface-visibility: hidden;
-backface-visibility: hidden;
-}
-
-.flip-box-front {
- border-radius: 20px;
- background-color: #f1f1f1;
-}
-
-.flip-box-back {
-transform: rotateY(180deg);
 
 }
 

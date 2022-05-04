@@ -1,5 +1,3 @@
-
-
 const formFeedbackSpan = document.querySelector(".form-feedback");
 const contactForm = document.querySelector(".contact-form");
 //on submit contact form handler (sends email via gmail servers and provides validation)
@@ -13,7 +11,7 @@ const submitHandler = async (event) => {
     const message = document.querySelector(".user-input-message").value.trim();
     if (!validateEmail(email)) {
         formFeedbackSpan.innerHTML = "Please enter a valid email address.";
-        formFeedbackSpan.style.color = "#000";
+        formFeedbackSpan.style.color = "#ffff";
         return;
     }
 
@@ -26,12 +24,12 @@ const submitHandler = async (event) => {
         
         
             formFeedbackSpan.innerHTML = "Message successfully received!";
-            formFeedbackSpan.style.color = "#000";
+            formFeedbackSpan.style.color = "#ffff";
             contactForm.reset();
     
     } else {
         formFeedbackSpan.innerHTML = "Please fill out all fields.";
-        formFeedbackSpan.style.color = "#000";
+        formFeedbackSpan.style.color = "#ffff";
     }
 };
 
